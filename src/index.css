@@ -1,0 +1,161 @@
+body {
+    background-color: #ece9ef;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.parent {
+    height: 12rem;
+    width: 25rem;
+}
+
+.gap-3 {
+    gap: 10px;
+}
+
+.cursorNotAllowed {
+    cursor: not-allowed !important;
+}
+
+.cursorAllowed {
+    cursor: pointer !important;
+}
+
+.btn {
+    background-color: #6610f2;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #3d0a91;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.profile-icon {
+    color: white;
+    margin-left: 10px;
+}
+
+.cards-conatainer {
+    padding: 10px 40px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 16px;
+    }
+
+    .cards-conatainer {
+        padding: 10px 16px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .btn {
+        font-size: 10px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3d0a91;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+
+.post-message {
+    margin-top: 100px;
+}
+
+.post-message h4 {
+    text-align: center;
+    color: #3d0a91;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+form {
+    max-width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        padding: 0 20px;
+    }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.posts {
+    transition: all 0.3s;
+    animation-name: cards;
+    animation-duration: 1s;
+}
+
+@keyframes cards {
+    0% {
+        opacity: 0;
+        translate: 0 100px;
+        /* rotate: 360deg; */
+    }
+
+    100% {
+        opacity: 0.25s;
+        translate: 0 0;
+        /* rotate: 0deg; */
+    }
+}
+
+
+.medium-box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
